@@ -70,12 +70,11 @@ function addReposToCard(repos) {
   });
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('keyup', (e) => {
   e.preventDefault();
   const user = search.value;
 
   if (user) {
     getUser(user);
-    search.value = "";
   }
 });
